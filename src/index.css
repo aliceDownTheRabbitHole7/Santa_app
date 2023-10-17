@@ -2,7 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @layer components {
+    .sidebar-icon {
+        @apply relative flex items-center justify-center 
+        h-12 w-12 mt-2 mb-2 mx-auto shadow-lg 
+        bg-green-900 text-white hover:bg-green-600 
+        rounded-3xl hover:rounded-xl
+        transition-all duration-300 ease-linear;
+    }
+} */
+
 html {
     background-image: url('./assets/bg_decoration.jpg');
     background-size: auto;
 }
+
+.parchment {
+    height: 50vh;
+    background-image: url('https://th.bing.com/th/id/R.31873b285b48fec6173bc1fc604e16c5?rik=g09IGt9G68XnHA&pid=ImgRaw&r=0');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
