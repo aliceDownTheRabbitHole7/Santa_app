@@ -3,7 +3,8 @@ import * as AiIcons from "react-icons/ai";
 import * as FaIcons from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { SideBarData } from "./SideBarData";
-import './SideBar.css'
+import "./SideBar.css";
+import { IconContext } from "react-icons";
 
 function SideBar({ children }) {
   const [sidebar, setSidebar] = useState(false);
@@ -11,32 +12,36 @@ function SideBar({ children }) {
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
-    <div className="navbar">
-      <Link to="#" className="menu-bars">
-        <FaIcons.FaBars onClick={showSidebar} className="h-6 w-6 mr-5" />
-      </Link>
-      <div>
-        <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-          <ul className="nav-menu-items">
-            <li className="navbar-toggle">
-              <Link to="#" className="menu-bars">
-                <AiIcons.AiOutlineClose />
-              </Link>
-            </li>
-            {SideBarData.map((item, index) => {
-              return (
-                <li key={index} className={item.class}>
-                  <Link to={item.path}>
-                    {item.icon}
-                    <span className="ml-3">{item.title}</span>
+    <>
+      <IconContext.Provider value={{color: '#fff'}}>
+        <div className="navbar">
+          <Link to="#" className="menu-bars">
+            <FaIcons.FaBars onClick={showSidebar} className="h-6 w-6 mr-5" />
+          </Link>
+          <div>
+            <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+              <ul className="nav-menu-items" onClick={showSidebar}>
+                <li className="navbar-toggle">
+                  <Link to="#" className="menu-bars">
+                    <AiIcons.AiOutlineClose />
                   </Link>
                 </li>
-              );
-            })}
-          </ul>
-        </nav>
-      </div>
-    </div>
+                {SideBarData.map((item, index) => {
+                  return (
+                    <li key={index} className={item.class}>
+                      <Link to={item.path} className="nav-link">
+                        {item.icon}
+                        <span className="ml-3">{item.title}</span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </IconContext.Provider>
+    </>
   );
 }
 

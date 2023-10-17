@@ -28,7 +28,7 @@
     justify-content: center;
     position: fixed;
     top: 0;
-    /* left: -100%; */
+    left: -100%;
     transition: 850ms;
 }
 
@@ -39,7 +39,6 @@
 
 .nav-text {
     font-family: 'Berkshire Swash', serif;
-    font-size: xx-large;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -60,9 +59,9 @@
     border-radius: 4px;
 }
 
-.nav-text a:hover {
+/* .nav-text a:hover {
     background-color: var(--tw-green-6);
-}
+} */
 
 .nav-menu-items {
     width: 100%;
