@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Young+Serif&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,6 +6,8 @@
 :root {
     --photo-bg: rgba(252, 230, 230, 0.9);
     --magnify-bg: rgba(142, 142, 142, 0.9);
+    --text-color: rgba(34, 25, 25, 1);
+    --about-bg: rgba(235, 235, 235, 0.8);
 }
 
 @layer components {
@@ -43,7 +44,7 @@ html {
 /* Gallery */
 
 .photo {
-    background: var(--photo-bg)
+    background-color: var(--photo-bg)
 }
 
 .full-screen {
@@ -56,10 +57,52 @@ html {
     -webkit-user-select: none;
 }
 
-/* .gallery-wrap .single img {
-  max-width: 100%  
-} */
-
 .gallery-wrap .single img:hover {
-    transform: scale(1.02)
+    transform: scale(1.02);
+    transition: 350ms;
+}
+
+/* About  */
+
+.info {
+    min-width: 20rem;
+    width: 30%;
+    max-width: 100%;
+    background-color: var(--about-bg);
+}
+
+.side-icon {
+    align-self: center;
+}
+
+.info-text, .bio-title {
+    font-family: 'Berkshire Swash', serif;
+    font-size: large;
+    color: var(--text-color);
+}
+.icon {
+    color: var(--text-color)
+}
+
+.bio {
+    width: 66%;
+    min-width: 20rem;
+    max-width: 66%;
+    background-color: var(--about-bg);
+}
+
+.bio-title {
+    font-size: 7vh;
+}
+
+.paragraph {
+    text-indent: 5vw;
+    line-height: 6vh;
+    font-family: 'Young Serif', serif;
+}
+
+.signature {
+    padding: 0 0 5vh 0;
+    font-family: 'Berkshire Swash', serif;
+    font-size: 2rem;
 }

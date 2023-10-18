@@ -10,7 +10,7 @@ import santaMother from '../assets/santa_mom.png'
 import santaShh from '../assets/santa_shh.png'
 import santaSit from '../assets/santa_sit.jpg'
 import santaSmile from '../assets/santa_smile.jpg'
-import santaFace from '../assets/santa_head.jpg'
+import santaElves from '../assets/santa_elves.jpg'
 import santaHug from '../assets/santa_hug.png'
 
 
@@ -53,7 +53,7 @@ export const PhotoData = [
         img: santaSmile
     },
     {
-        img: santaFace
+        img: santaElves
     },
     {
         img: santaHug
