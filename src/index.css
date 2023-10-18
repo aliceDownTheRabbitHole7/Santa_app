@@ -1,17 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Updock&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Updock&display=swap');
 
 :root {
     --photo-bg: rgba(252, 230, 230, 0.9);
+    --magnify-bg: rgba(142, 142, 142, 0.9);
 }
 
 @layer components {
     .nav-link {
         @apply bg-red-600 hover:bg-red-500 rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear shadow-lg;
     }
-
     .photo {
         @apply m-2 p-5 max-h-96 rounded-xl shadow-lg;
     }
@@ -30,9 +31,6 @@ html {
     padding: 0;
 }
 
-.photo {
-    background: var(--photo-bg)
-}
 
 .about {
     display: flex;
@@ -40,4 +38,28 @@ html {
     align-items: center;
     justify-content: center;
     font-size: 3rem;
+}
+
+/* Gallery */
+
+.photo {
+    background: var(--photo-bg)
+}
+
+.full-screen {
+    background-color: var(--magnify-bg);
+    z-index: 2;
+}
+
+.full-screen img {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* .gallery-wrap .single img {
+  max-width: 100%  
+} */
+
+.gallery-wrap .single img:hover {
+    transform: scale(1.02)
 }

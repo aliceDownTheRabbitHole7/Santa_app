@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import * as AiIcons from "react-icons/ai";
-import * as FaIcons from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { SideBarData } from "./SideBarData";
-import "./SideBar.css";
 import { IconContext } from "react-icons";
+import * as AiIcons from "react-icons/ai";
+import * as FaIcons from "react-icons/fa6";
+import "./SideBar.css";
 
 function SideBar({ children }) {
   const [sidebar, setSidebar] = useState(false);
@@ -28,7 +28,7 @@ function SideBar({ children }) {
                 </li>
                 {SideBarData.map((item, index) => {
                   return (
-                    <li key={index} className={item.class}>
+                    <li key={index} className='nav-text'>
                       <Link to={item.path} className="nav-link">
                         {item.icon}
                         <span className="ml-3">{item.title}</span>
