@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Young+Serif&display=swap');
+
+:root {
+    --text-color: rgba(34, 25, 25, 1);
+    --about-bg: rgba(235, 235, 235, 0.9);
+}
+
+
+.info {
+    background-color: var(--about-bg);
+    overflow: auto;
+    width: 90%;
+}
+
+.side-icon {
+    align-self: center;
+}
+
+.info-text, .bio-title {
+    font-family: 'Berkshire Swash', serif;
+    font-size: large;
+    color: var(--text-color);
+}
+.icon {
+    color: var(--text-color)
+}
+
+.bio { 
+    background-color: var(--about-bg);
+    width: 90%;
+}
+
+.bio-title {
+    font-size: 7vh;
+}
+
+.paragraph {
+    text-indent: 5vw;
+    line-height: 6vh;
+    font-family: 'Young Serif', serif;
+}
+
+.signature {
+    padding: 0 0 5vh 0;
+    font-family: 'Berkshire Swash', serif;
+    font-size: 2rem;
+}

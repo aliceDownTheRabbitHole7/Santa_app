@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Young+Serif&display=swap');
+
+:root {
+    --photo-bg: rgba(252, 230, 230, 0.9);
+    --magnify-bg: rgba(142, 142, 142, 0.9);
+    --text-color: rgba(34, 25, 25, 1);
+    --about-bg: rgba(235, 235, 235, 0.9);
+}
+
+
+.form-container {
+    align-items: center;
+}
+
+form {
+    background-color: var(--about-bg);
+    width: 90%;
+}
+
+.map-container {
+    align-items: center;
+}
+
+.text-container {
+    align-items: center;
+}
+
+textarea {
+    width: 90%;
+    height: 30vh;
+}
+
+
+label {
+    color: var(--text-color);
+}
+
+.dear-header {
+    font-family: 'Berkshire Swash', serif;
+    color: var(--text-color);
+}

@@ -7,7 +7,7 @@
     --photo-bg: rgba(252, 230, 230, 0.9);
     --magnify-bg: rgba(142, 142, 142, 0.9);
     --text-color: rgba(34, 25, 25, 1);
-    --about-bg: rgba(235, 235, 235, 0.8);
+    --about-bg: rgba(235, 235, 235, 0.9);
 }
 
 @layer components {
@@ -21,88 +21,13 @@
 
 html {
     background-image: url('./assets/bg_decoration.jpg');
-    background-size: auto;
+    background-size: cover;
     background-attachment: fixed;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-
-.about {
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-}
-
-/* Gallery */
-
-.photo {
-    background-color: var(--photo-bg)
-}
-
-.full-screen {
-    background-color: var(--magnify-bg);
-    z-index: 2;
-}
-
-.full-screen img {
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-.gallery-wrap .single img:hover {
-    transform: scale(1.02);
-    transition: 350ms;
-}
-
-/* About  */
-
-.info {
-    min-width: 20rem;
-    width: 30%;
-    max-width: 100%;
-    background-color: var(--about-bg);
-}
-
-.side-icon {
-    align-self: center;
-}
-
-.info-text, .bio-title {
-    font-family: 'Berkshire Swash', serif;
-    font-size: large;
-    color: var(--text-color);
-}
-.icon {
-    color: var(--text-color)
-}
-
-.bio {
-    width: 66%;
-    min-width: 20rem;
-    max-width: 66%;
-    background-color: var(--about-bg);
-}
-
-.bio-title {
-    font-size: 7vh;
-}
-
-.paragraph {
-    text-indent: 5vw;
-    line-height: 6vh;
-    font-family: 'Young Serif', serif;
-}
-
-.signature {
-    padding: 0 0 5vh 0;
-    font-family: 'Berkshire Swash', serif;
-    font-size: 2rem;
 }

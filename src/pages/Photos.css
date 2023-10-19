@@ -1,0 +1,23 @@
+:root {
+    --photo-bg: rgba(252, 230, 230, 0.9);
+    --magnify-bg: rgba(142, 142, 142, 0.9);
+}
+
+.photo {
+    background-color: var(--photo-bg)
+}
+
+.full-screen {
+    background-color: var(--magnify-bg);
+    z-index: 2;
+}
+
+.full-screen img {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.gallery-wrap .single img:hover {
+    transform: scale(1.02);
+    transition: 350ms;
+}

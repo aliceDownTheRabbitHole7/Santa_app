@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { PhotoData } from './PhotosData'
 import * as FaIcons from 'react-icons/fa6'
+import './Photos.css'
 
 function Photos() {
 
@@ -26,7 +27,7 @@ function Photos() {
 
     const photoList = PhotoData && PhotoData.map((slide, index) => {
         return(
-            <div onClick={() => handleMagnify(index)} key={index} className='single'>
+            <div onClick={() => handleMagnify(index)} key={index} className='single mr-4'>
                 <img src={slide.img}  className='photo cursor-pointer max-w-full'/>
             </div>
         )
@@ -44,7 +45,7 @@ function Photos() {
                 </div>
             </div>
         }
-        <div className='gallery-wrap flex flex-wrap m-3 pr-5 justify-around w-screen'>
+        <div className='gallery-wrap flex flex-wrap justify-around w-screen my-5'>
             {photoList}
         </div>
     </div>

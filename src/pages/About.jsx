@@ -1,6 +1,7 @@
 import React from 'react'
 import santaCloseup from '../assets/santa_closeup.jpg'
 import * as FaIcons from 'react-icons/fa6'
+import './About.css'
 
 function About() {
   const data = [
@@ -29,9 +30,9 @@ function About() {
 
   return (
     <div className='about-container flex flex-wrap justify-center'>
-        <div className="info flex flex-col align-middle justify-center h-screen m-5 shadow-2xl rounded-2xl">
+        <div className="info flex flex-col align-middle justify-evenly p-5 m-5 shadow-2xl rounded-2xl">
           <div className="flex justify-center pt-8 rounded-xl">
-            <img src={santaCloseup} className='rounded-2xl w-72 shadow-2xl' alt="" />
+            <img src={santaCloseup} className='bio-pic rounded-2xl max-h-96 shadow-2xl' alt="" />
           </div>
           <div className="flex flex-col justify-center align-middle h-auto mt-4">
             {infoData}
@@ -40,8 +41,8 @@ function About() {
 
         <div className="bio mt-5 mb-5 rounded-2xl">
           <div className='flex flex-col justify-center'>
-            <h1 className='bio-title text-center pt-5'>Santa Claus</h1>
-            <div className="bio-paragraph px-10 pt-7">
+            <h1 className='bio-title text-center pt-5 px-5'>Santa Claus</h1>
+            <div className="bio-paragraph px-8 pt-4">
               <p className='paragraph'>I call the North Pole my home, and it's where my trusted team of cheerful elves and I work tirelessly throughout the year, crafting toys and gifts for children everywhere. It's a busy place, but the joy of bringing smiles to kids' faces makes it all worth it.</p>
               <br></br>
               <p className='paragraph'>On the magical night of December 24th, I set out on my incredible journey in a sleigh pulled by my dear reindeer, with Rudolph leading the way. With my bottomless sack of gifts, I visit homes all over the world, sneaking down chimneys or finding other creative ways to leave presents under the Christmas tree.</p>
