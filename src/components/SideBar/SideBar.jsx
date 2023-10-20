@@ -11,6 +11,17 @@ function SideBar({ children }) {
 
   const showSidebar = () => setSidebar(!sidebar);
 
+  const sidebarElements = SideBarData.map((item, index) => {
+    return (
+      <li key={index} className='nav-text'>
+        <Link to={item.path} className="nav-link">
+          {item.icon}
+          <span className="ml-3">{item.title}</span>
+        </Link>
+      </li>
+    );
+  })
+
   return (
     <>
       <IconContext.Provider value={{color: '#fff'}}>
@@ -26,16 +37,7 @@ function SideBar({ children }) {
                     <AiIcons.AiOutlineClose />
                   </Link>
                 </li>
-                {SideBarData.map((item, index) => {
-                  return (
-                    <li key={index} className='nav-text'>
-                      <Link to={item.path} className="nav-link">
-                        {item.icon}
-                        <span className="ml-3">{item.title}</span>
-                      </Link>
-                    </li>
-                  );
-                })}
+                {sidebarElements}
               </ul>
             </nav>
           </div>

@@ -5,11 +5,9 @@
     --about-bg: rgba(235, 235, 235, 0.9);
 }
 
-
 .info {
     background-color: var(--about-bg);
     overflow: auto;
-    width: 90%;
 }
 
 .side-icon {
@@ -27,7 +25,7 @@
 
 .bio { 
     background-color: var(--about-bg);
-    width: 90%;
+    width: 72%;
 }
 
 .bio-title {

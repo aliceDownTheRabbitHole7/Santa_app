@@ -37,15 +37,15 @@ export const PhotoData = [
     {
         img: santaMrs
     },
-    {
-        img: santaCookie
-    },
-    {
-        img: santaMother
-    },
-    {
-        img: santaShh
-    },
+    // {
+    //     img: santaCookie
+    // },
+    // {
+    //     img: santaMother
+    // },
+    // {
+    //     img: santaShh
+    // },
     {
         img: santaSit
     },

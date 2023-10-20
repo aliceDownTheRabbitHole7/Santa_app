@@ -25,6 +25,9 @@ html {
     background-attachment: fixed;
     /* overflow-x: hidden; */
 }
+body {
+    display: flex;
+}
 
 * {
     box-sizing: border-box;

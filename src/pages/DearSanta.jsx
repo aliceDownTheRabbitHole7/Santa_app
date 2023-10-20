@@ -22,24 +22,24 @@ function DearSanta()  {
   const formElements = formData.map((element, i) => {
     return (
       <div className='m-3' key={i}>
-        <label htmlFor={element.for} className='mr-2 mb-2'>{element.text}</label>
-        <input placeholder={element.placeholder} name={element.for} onChange={onAlter} type={element.type} id={element.id} className='text p-1' />
+        <label htmlFor={element.for} className='form-label mr-2 mb-2'>{element.text}</label>
+        <input placeholder={element.placeholder} name={element.for} onChange={onAlter} type={element.type} id={element.id} className='text p-1 shadow-lg' required />
       </div>
     )
   })
 
   return (
-    <div className='form-container w-screen h-screen flex justify-center'>
-        <form onSubmit={handleSubmit} className='flex flex-wrap flex-col justify-center font-extrabold rounded-xl p-10'>
-          <div className='map-container flex flex-col justify-evenly'>
-            {formElements}
-          </div>
-          <div className="text-container flex flex-col justify-evenly m-10">
-            <h1 className='dear-header text-4xl'>Dear Santa...</h1>
-            <textarea type="text" className='mt-5 p-2' placeholder='Write your letter to Santa here...'/>
-          </div>
-          <input type="submit" value='Submit' className='submit rounded-l bg-green-900 p-1'/>
-        </form>
+    <div className='form-container w-screen flex justify-center py-10'>
+      <form onSubmit={handleSubmit} className='flex flex-wrap flex-col justify-center font-extrabold rounded-xl p-10'>
+        <div className='map-container flex flex-col m-auto justify-center'>
+          {formElements}
+        </div>
+        <div className="text-container flex flex-col justify-evenly m-10">
+          <h1 className='dear-header text-4xl'>Dear Santa...</h1>
+          <textarea required type="text" className='mt-5 p-2 shadow-lg' placeholder='Write your letter to Santa here...'/>
+        </div>
+        <input type="submit" value='Submit' className='submit rounded-xl bg-green-900 shadow-lg p-3 cursor-pointer border-none font-extrabold text-white'/>
+      </form>
     </div>
   )
 
