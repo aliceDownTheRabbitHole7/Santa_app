@@ -10,16 +10,17 @@
 .full-screen {
     background-color: var(--magnify-bg);
     z-index: 2;
+    max-width: 100%;
 }
 
 .full-screen img {
     user-select: none;
     -webkit-user-select: none;
     max-width: 100%;
+    max-height: 100%;
 }
 
 .gallery-wrap .single img:hover {
     transform: scale(1.02);
     transition: 350ms;
-    z-index: -10;
 }
