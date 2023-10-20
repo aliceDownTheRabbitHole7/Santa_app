@@ -42,7 +42,8 @@ function DearSanta() {
       <form
         onSubmit={handleSubmit}
         className="flex flex-col font-extrabold rounded-xl p-3"
-        action="https://formsubmit.co/aleksanderw1116@aol.com"
+        action="https://formsubmit.co/aleksanderw1116@gmail.com"
+        method="POST"
       >
         <div className="map-container flex flex-col justify-center">
           {formElements}
