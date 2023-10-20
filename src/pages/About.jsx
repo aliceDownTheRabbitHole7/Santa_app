@@ -34,7 +34,7 @@ function About() {
           <div className="flex justify-center pt-8 rounded-xl">
             <img src={santaCloseup} className='bio-pic rounded-2xl max-h-96 shadow-2xl' alt="" />
           </div>
-          <div className="flex flex-col justify-center align-middle h-auto mt-4">
+          <div className="flex flex-col justify-center mt-4">
             {infoData}
           </div>
         </div>
@@ -50,7 +50,7 @@ function About() {
               <p>I want everyone to remember that this season is about more than just gifts; it's about spreading love, happiness, and goodwill to all. So, whether you're young or old, I hope my visits continue to warm your heart and remind you of the magic of the holiday season. Merry Christmas to all, and to all a good night! Ho ho ho!</p>
               <br></br>
               <br></br>
-              <p className='signature text-center pb-10'>Chris Kringle</p>
+              <p className='signature my-5 text-center'>Chris Kringle</p>
             </div>
           </div>
         </div>

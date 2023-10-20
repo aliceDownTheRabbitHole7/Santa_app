@@ -15,6 +15,7 @@
 .full-screen img {
     user-select: none;
     -webkit-user-select: none;
+    max-width: 100%;
 }
 
 .gallery-wrap .single img:hover {
