@@ -7,7 +7,8 @@
 
 .info {
     background-color: var(--about-bg);
-    overflow: auto;
+    min-width: 200px;
+    max-width: 350px;
 }
 
 .side-icon {
@@ -25,7 +26,8 @@
 
 .bio { 
     background-color: var(--about-bg);
-    width: 72%;
+    width: 70%;
+    min-width: 350px;
 }
 
 .bio-title {

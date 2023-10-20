@@ -26,6 +26,7 @@ form {
 textarea {
     width: 95%;
     height: 30vh;
+    min-width: 200px;
 }
 
 
@@ -39,14 +40,10 @@ label {
 }
 
 .submit {
-    margin: 0 auto;
+    margin: 2rem auto 1rem auto;
 }
 
 .submit:hover {
     transform: scale(1.02);
     transition: 350ms;
 }
- form img {
-    width: 350px;
-    margin: 0 auto;
- }

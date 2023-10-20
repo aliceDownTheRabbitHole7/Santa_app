@@ -30,7 +30,7 @@ function About() {
 
   return (
     <div className='flex flex-wrap justify-center'>
-        <div className="info flex flex-col align-middle justify-evenly p-5 m-5 shadow-2xl rounded-2xl">
+        <div className="info flex flex-col align-middle justify-evenly p-5 mt-5 shadow-2xl rounded-2xl">
           <div className="flex justify-center pt-8 rounded-xl">
             <img src={santaCloseup} className='bio-pic rounded-2xl max-h-96 shadow-2xl' alt="" />
           </div>

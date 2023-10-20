@@ -12,7 +12,6 @@ function DearSanta() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
   };
 
   const onAlter = (e) => {
@@ -48,8 +47,8 @@ function DearSanta() {
         <div className="map-container flex flex-col m-auto justify-center">
           {formElements}
         </div>
-        <div className="text-container flex flex-col justify-evenly m-10">
-          <h1 className="dear-header text-4xl">Dear Santa...</h1>
+        <div className="text-container flex flex-col justify-evenly align-middlem-10">
+          <h1 className="dear-header text-4xl mt-5">Dear Santa...</h1>
           <textarea
             required
             type="text"

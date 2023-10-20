@@ -3,13 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --photo-bg: rgba(252, 230, 230, 0.9);
-    --magnify-bg: rgba(142, 142, 142, 0.9);
-    --text-color: rgba(34, 25, 25, 1);
-    --about-bg: rgba(235, 235, 235, 0.9);
-}
-
 @layer components {
     .nav-link {
         @apply bg-red-600 hover:bg-red-500 rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear shadow-lg;
