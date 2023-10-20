@@ -12,11 +12,11 @@ export const SideBarData = [
         title: 'Gallery',
         icon: <FaIcons.FaImages className='h-7 w-7'/>,
     },
-    {
-        path: '/tracker',
-        title: 'Tracker',
-        icon: <FaIcons.FaGlobe className='h-6 w-6' />,
-    },
+    // {
+    //     path: '/tracker',
+    //     title: 'Tracker',
+    //     icon: <FaIcons.FaGlobe className='h-6 w-6' />,
+    // },
     {
         path: '/countdown',
         title: 'Countdown',

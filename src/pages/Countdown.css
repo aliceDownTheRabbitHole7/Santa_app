@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Young+Serif&display=swap');
 
 :root {
-    --photo-bg: rgba(252, 230, 230, 0.9);
-    --magnify-bg: rgba(142, 142, 142, 0.9);
     --text-color: rgba(34, 25, 25, 1);
     --about-bg: rgba(235, 235, 235, 0.9);
 }
 
 .countdown-container {
+    width: 100vw;
     height: 89vh;
     align-items: center;
     font-size: 2rem;
@@ -26,24 +25,25 @@
 }
 
 .timer-box div p {
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Berkshire Swash', serif;
 }
 
 .timer-box div span {
     font-family: 'Berkshire Swash', serif;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .sleigh {
     width: 100px;
     position: absolute;
     bottom: 10%;
+    z-index: -1;
     animation: sleigh 10s linear infinite;
 }
 @keyframes sleigh {
     0% {
-        left: 10%;
+        left: 20%;
         opacity: 0;
     }
     50% {

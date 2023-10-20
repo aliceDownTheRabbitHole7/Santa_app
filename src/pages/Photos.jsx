@@ -38,7 +38,7 @@ function Photos() {
         {openModal && 
             <div className="slider-wrap">
                 <FaIcons.FaCircleChevronLeft className='cursor-pointer h-8 w-8 z-10 fixed text-white top-96 left-10' onClick={handleNext}/>
-                <FaIcons.FaCircleXmark className='cursor-pointer h-8 w-8 z-10 fixed text-white top-10 right-10' onClick={handleClose} />
+                <FaIcons.FaCircleXmark className='cursor-pointer h-8 w-8 z-10 fixed text-white top-12 right-10' onClick={handleClose} />
                 <FaIcons.FaCircleChevronRight className='cursor-pointer h-8 w-8 z-10 fixed text-white top-96 right-10' onClick={handlePrev} />
                 <div className="full-screen p-10 h-screen w-screen flex align-middle justify-center fixed top-0 pointer-events-none">
                     <img src={PhotoData[slideNumber].img} className='rounded-xl max-h-screen max-w-screen-lg'/>

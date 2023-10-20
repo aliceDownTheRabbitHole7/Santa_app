@@ -1,7 +1,6 @@
-import dayjs from 'dayjs'
-
 export const xmasMillisecondsTimestamp = 1703462400000;
 export var countdownDate = new Date('Dec 25, 2023 00:00:00').getTime();
+
 var x = setInterval(function() {
     var currentTime = new Date().getTime();
     var range = countdownDate - currentTime;

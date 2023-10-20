@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path='/' exact element={(<About />)} />
           <Route path='/gallery' element={(<Photos />)} />
-          <Route path='/tracker' element={(<Tracker />)} />
+          {/* <Route path='/tracker' element={(<Tracker />)} /> */}
           <Route path='/countdown' element={(<Countdown />)} />
           <Route path='/dear-santa' element={(<DearSanta />)} />
         </Routes>
