@@ -13,7 +13,7 @@
 form {
     background-color: var(--form-bg);
     width: 85%;
-    max-width: 350px;
+    min-width: 350px;
 }
 
 .map-container {

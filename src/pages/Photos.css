@@ -4,7 +4,7 @@
 }
 
 .photo {
-    background-color: var(--photo-bg)
+    background-color: var(--photo-bg);
 }
 
 .full-screen {
@@ -20,4 +20,5 @@
 .gallery-wrap .single img:hover {
     transform: scale(1.02);
     transition: 350ms;
+    z-index: -10;
 }
