@@ -28,7 +28,7 @@ function Countdown() {
   return (
     <div className='countdown-container flex justify-center font-bold'>
       <div className='countdown-display shadow-lg rounded-xl p-7'>
-        <h1 className='countdown-header p-3 text-center'>Countdown until <span className='text-red-800'>Christmas</span>!</h1>
+        <h1 className='countdown-header p-3 text-center'>Countdown until <span className='christmas text-red-800'>Christmas</span>!</h1>
         <div className="timer-box flex p-2 justify-center">
           <div>
             <p id='days' className='px-5 m-2'>{remainingTime.days}</p>
