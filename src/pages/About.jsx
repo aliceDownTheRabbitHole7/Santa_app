@@ -29,8 +29,8 @@ function About() {
   })
 
   return (
-    <div className='flex flex-wrap justify-center'>
-        <div className="info flex flex-col align-middle justify-evenly p-5 mt-5 shadow-2xl rounded-2xl">
+    <div className='flex flex-wrap justify-center mb-5'>
+        <div className="info flex flex-col align-middle justify-evenly p-5 mt-5 mx-3 shadow-2xl rounded-2xl">
           <div className="flex justify-center pt-8 rounded-xl">
             <img src={santaCloseup} className='bio-pic rounded-2xl max-h-96 shadow-2xl' alt="" />
           </div>
@@ -39,7 +39,7 @@ function About() {
           </div>
         </div>
 
-        <div className="bio mt-5 mb-5 rounded-2xl">
+        <div className="bio mt-5 rounded-2xl">
           <div className='flex flex-col justify-center'>
             <h1 className='bio-title text-center pt-5 px-5'>Santa Claus</h1>
             <div className="bio-paragraph px-8 pt-4">
