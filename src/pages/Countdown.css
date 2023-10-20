@@ -37,22 +37,20 @@
 .sleigh {
     width: 100px;
     position: absolute;
-    bottom: 10%;
+    left: 50%;
+    bottom: 2rem;
     z-index: -1;
-    animation: sleigh 10s linear infinite;
+    animation: sleigh 3s linear infinite;
 }
 
 @keyframes sleigh {
     0% {
-        left: 35%;
         opacity: 0;
     }
     50% {
-        left: 47%;
         opacity: 1;
     }
     100% {
-        left: 60%;
         opacity: 0;
     }
 }

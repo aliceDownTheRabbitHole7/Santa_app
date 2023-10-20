@@ -20,7 +20,7 @@ function DearSanta() {
 
   const formElements = formData.map((element, i) => {
     return (
-      <div className="m-3" key={i}>
+      <div className="form-map my-3 flex flex-wrap justify-center" key={i}>
         <label htmlFor={element.for} className="form-label mr-2 mb-2">
           {element.text}
         </label>
@@ -30,7 +30,7 @@ function DearSanta() {
           onChange={onAlter}
           type={element.type}
           id={element.id}
-          className="text p-1 shadow-lg"
+          className="p-1 shadow-lg"
           required
         />
       </div>
@@ -41,14 +41,14 @@ function DearSanta() {
     <div className="form-container w-screen flex justify-center py-10">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-wrap flex-col justify-center font-extrabold rounded-xl p-10"
+        className="flex flex-col font-extrabold rounded-xl p-3"
         action="https://formsubmit.co/aleksanderw1116@aol.com"
       >
-        <div className="map-container flex flex-col m-auto justify-center">
+        <div className="map-container flex flex-col justify-center">
           {formElements}
         </div>
-        <div className="text-container flex flex-col justify-evenly align-middlem-10">
-          <h1 className="dear-header text-4xl mt-5">Dear Santa...</h1>
+        <div className="text-container flex flex-col justify-evenly align-middle">
+          <h1 className="dear-header text-4xl mt-5 text-center">Dear Santa...</h1>
           <textarea
             required
             type="text"

@@ -12,7 +12,8 @@
 
 form {
     background-color: var(--form-bg);
-    width: 90%;
+    width: 85%;
+    max-width: 350px;
 }
 
 .map-container {
@@ -46,4 +47,8 @@ label {
 .submit:hover {
     transform: scale(1.02);
     transition: 350ms;
+}
+
+.form-map {
+    max-width: 90%
 }

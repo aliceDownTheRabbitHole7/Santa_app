@@ -34,14 +34,13 @@
     font-size: 7vh;
 }
 
-.paragraph {
+.bio-paragraph p {
     text-indent: 5vw;
-    line-height: 6vh;
+    line-height: 5vh;
     font-family: 'Young Serif', serif;
 }
 
 .signature {
-    padding: 0 0 5vh 0;
     font-family: 'Berkshire Swash', serif;
     font-size: 2rem;
 }
