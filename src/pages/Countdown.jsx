@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import './Countdown.css'
-import * as utilz from './CountdownUtilz'
+import '../styles/Countdown.css'
+import * as utilz from '../utilz/CountdownUtilz'
 import santaSleigh from '../assets/sleigh.png'
 
 const defaultRemainingTime = {

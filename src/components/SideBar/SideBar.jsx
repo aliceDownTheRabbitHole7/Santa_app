@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { SideBarData } from "./SideBarData";
+import { SideBarData } from "../data/SideBarData.jsx";
 import { IconContext } from "react-icons";
 import * as AiIcons from "react-icons/ai";
 import * as FaIcons from "react-icons/fa6";
-import "./SideBar.css";
+import "../styles/SideBar.css";
 
 function SideBar({ children }) {
   const [sidebar, setSidebar] = useState(false);

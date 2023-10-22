@@ -1,7 +1,7 @@
 import React from 'react'
 import santaCloseup from '../assets/santa_closeup.jpg'
 import * as FaIcons from 'react-icons/fa6'
-import './About.css'
+import '../styles/About.css'
 
 function About() {
   const data = [

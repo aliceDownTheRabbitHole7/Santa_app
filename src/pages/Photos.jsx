@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { PhotoData } from './PhotosData'
+import { PhotoData } from '../data/PhotosData'
 import * as FaIcons from 'react-icons/fa6'
-import './Photos.css'
+import '../styles/Photos.css'
 
 function Photos() {
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { formData } from "./DearSantaData";
-import "./DearSanta.css";
+import { formData } from "../data/DearSantaData";
+import "../styles/DearSanta.css";
 
 function DearSanta() {
   const [values, setValues] = useState({
