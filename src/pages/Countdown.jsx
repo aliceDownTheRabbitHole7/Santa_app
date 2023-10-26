@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/Countdown.css'
 import * as utilz from '../utilz/CountdownUtilz'
-import santaSleigh from '../assets/sleigh.png'
 
 const defaultRemainingTime = {
   seconds: '00',
@@ -47,7 +46,7 @@ function Countdown() {
             <span>Seconds</span>
           </div>
         </div>
-        <img src={santaSleigh} className='sleigh'/>
+        <h1 className='shining-text text-center'>Ho! Ho! Ho!</h1>
       </div>
     </div>
   )

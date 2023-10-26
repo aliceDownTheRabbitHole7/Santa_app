@@ -35,24 +35,30 @@
     font-size: 20px;
 }
 
-.sleigh {
-    width: 100px;
-    position: absolute;
-    left: 50%;
-    bottom: 2rem;
-    z-index: -1;
-    animation: sleigh 3s linear infinite;
-}
+.shining-text {
+    font-family: 'Berkshire Swash', serif;
+    font-size: xx-large;
+    color: var(--about-bg);
+    text-align: center;
+    letter-spacing: 1px;
 
-@keyframes sleigh {
+    margin: 1rem 0;
+    overflow: hidden;
+
+    background: linear-gradient(90deg, var(--about-bg), #000, var(--about-bg));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-clip: text;
+
+    animation: shine 5s linear infinite;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes shine {
     0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
+        background-position: -500%;
     }
     100% {
-        opacity: 0;
+        background-position: 500%;
     }
 }
 
